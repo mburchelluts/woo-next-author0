@@ -1,5 +1,13 @@
 const path = require("path");
-const allowedImageWordPressDomain = new URL(process.env.NEXT_PUBLIC_WORDPRESS_URL).hostname
+
+let allowedImageWordPressDomain = "";
+
+try {
+    const wordpressURL = new URL(process.env.NEXT_PUBLIC_WORDPRESS_URL);
+    allowedImageWordPressDomain = wordpressURL.hostname;
+} catch (error) {
+    console.error("Error parsing NEXT_PUBLIC_WORDPRESS_URL:", error.message);
+}
 
 module.exports = {
     trailingSlash: true,
@@ -20,6 +28,7 @@ module.exports = {
      * @see https://nextjs.org/docs/basic-features/image-optimization#domains
      */
     images: {
-        domains: [ allowedImageWordPressDomain, 'localhost' ],
+        domains: [allowedImageWordPressDomain, 'via.placeholder.com'],
     },
 };
+

@@ -1,6 +1,6 @@
 {
   "name": "woo-next",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,33 +9,34 @@
     "svg": "svgr -d src/components/icons src/components/icons/svgs"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.16",
-    "@stripe/stripe-js": "^1.14.0",
-    "@svgr/cli": "^5.5.0",
+    "@apollo/client": "^3.10.4",
+    "@stripe/stripe-js": "^3.5.0",
+    "@svgr/cli": "^8.1.0",
     "@woocommerce/woocommerce-rest-api": "^1.0.1",
-    "axios": "^0.21.1",
-    "classnames": "^2.3.1",
-    "graphql": "^15.4.0",
-    "lodash": "^4.17.20",
-    "micro": "^9.3.4",
-    "next": "^11.1.1",
+    "axios": "^1.6.8",
+    "classnames": "^2.3.2",
+    "graphql": "^15.10.1",
+    "lodash": "^4.17.21",
+    "micro": "^9.4.1",
+    "next": "^13.5.8",
     "next-stripe": "^1.0.0-beta.9",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.13",
     "nprogress": "^0.2.0",
-    "prop-types": "^15.7.2",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "sass": "^1.29.0",
-    "stripe": "^8.148.0",
-    "uuid": "^8.3.1",
-    "validator": "^13.1.17"
+    "prop-types": "^15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sass": "^1.77.6",
+    "stripe": "^17.2.0",
+    "uuid": "^9.0.1",
+    "validator": "^13.12.0"
   },
   "devDependencies": {
     "install": "^0.13.0",
-    "postcss-flexbugs-fixes": "^5.0.1",
-    "postcss-import": "^13.0.0",
-    "postcss-preset-env": "^6.7.0",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.2",
     "precss": "^4.0.0",
-    "tailwindcss": "^1.9.6"
+    "tailwindcss": "^3.4.1"
   }
 }
